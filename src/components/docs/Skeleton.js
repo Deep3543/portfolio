@@ -18,14 +18,14 @@ class HomeSkeleton extends Component{
                         <Grid.Column>
                             {/* Intro Text on the right */}
                             {/* Title */}
-                            <Header className="text-header" as="h2">Hello There👋</Header>
+                            <Header className="text-header margin-top-10" as="h2">Hello There👋</Header>
                             {/* Subtitle */}
-                            <Header className="text-subheader" as="h4">It's <span className="name">DEEP</span> here!</Header>
+                            <Header className="text-subheader margin-top-10" as="h4">It's <span className="name">DEEP</span> here!</Header>
                             {/* TODO: Add paragraph highlighting skills */}
-                            <p className="text-desc">A friendly neighborhood geek.</p>
+                            <p className="text-desc margin-top-10">A friendly neighborhood geek.</p>
                             <p className="text-desc">Full Stack Developer.</p>
                             {/* Explore Portfolio Button */}
-                            <a href="#" className="button">
+                            <a href="#" className="button margin-top-10">
                                 <span>Explore Portfolio</span>
                                 {/* <svg width="13px" height="10px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>
