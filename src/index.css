@@ -9,7 +9,15 @@ a{text-decoration: none; color: inherit;}
 .margin-top-10{
   margin-top:3%;
 }
+.margin-top-4{
+  margin-top: 4%;
+}
+.margin-top-15{
+  margin-top: 6%;
+}
 /* Responsive Design CSS */
+
+
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
   #primary { width:67%; }
@@ -26,22 +34,44 @@ a{text-decoration: none; color: inherit;}
 @media (min-width:960px) { body {font-size:1.2rem !important;} } 
 @media (min-width:1100px) { body {font-size:1.5rem !important;} }
 
+
+/* Nav Bar */
+
+/* Theme Icon */
+.theme-icon{
+
+  font-size: 35px !important;
+  float: right;
+  color:#8F659D;
+}
+.nav{
+  width: 100%;
+  margin: auto;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+
+/* ------- */
+
+
 /* Landing Page Container for Image & Text */
 .ui.container{
   width: auto;
 }
 
 /* Landing Image */
+
 .ui.rounded.image{
-  border-radius: 18px !important;
+  border-radius: 1.3rem !important;
+  background-color: #dfe5f41e;  
 }
 .landing-image{
+  margin: auto;
   max-width:100%;
-  height: auto;
-  /* left: 45px;
-  bottom: 45px;
-  top: 45px; */
-  filter: drop-shadow(-4px -4px 10px rgba(220, 220, 220, 0.08)) drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(-4px -4px 10px rgba(220, 220, 220, 0.76)) drop-shadow(4px 4px 10px 3px rgba(0, 0, 0, 0.733));
+}
+.ui.grid>.column:not(.row){
+  margin: auto;
 }
 
 /* Landing Text Header */
@@ -87,7 +117,7 @@ a{text-decoration: none; color: inherit;}
 /* Explore Portfolio Button */
 .button{
   position: relative;
-  padding: 13px 22px;
+  padding: 11px 22px;
   transition: all .2s ease;
 }
 .button:before{
