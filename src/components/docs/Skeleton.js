@@ -16,6 +16,7 @@ class HomeSkeleton extends Component{
 
     render(){
         return(
+            // TODO: Redesign the Skeleton based on the Wireframes
             // Skeleton for Homepage
             <>
                 {/* Container for Image & Intro */}
