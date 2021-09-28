@@ -3,12 +3,28 @@
  import Landing from '../../assets/avatar.png';
 
 class HomeSkeleton extends Component{
+    state = {
+        left: 0,
+        top: 0
+    }
+    // Cursor Implementation
+    componentDidMount(){
+        document.addEventListener('mousemove', (e) => {
+            this.setState({left: e.pageX, top: e.pageY});
+        });
+    }
+
     render(){
         return(
             // Skeleton for Homepage
             <>
                 {/* Container for Image & Intro */}
                 <div className="margin-top-15">
+                {/* Code for the Blobs animation goes here : REFER TO UPNOTE for code */}
+                {/* -------------------------------------- */}
+                    {/* Cursor code */}
+                    <div className="cursor" style={{left: this.state.left, top: this.state.top}} />
+                    {/* Hero Image & Intro */}
                     <Grid stackable columns={2} className="landing-area margin-top-65">
                         <Grid.Column>
                             {/* Image on the left */}
