@@ -7,11 +7,11 @@
 }
 
 /* General Styling */
-* { margin: 0; padding: 0; color: var(--brand); font-family: 'Quicksand';}
-body, html{ max-height: 100%; font-size: 100%;}
-html{cursor: none;}
-body{background-color: var(--shades-dark); overflow: hidden; overflow-y: scroll;}
-.ui.grid{ margin: auto;}
+* {margin: 0; padding: 0; color: var(--brand); font-family: 'Quicksand';}
+body, html{font-size: 100%; min-height: 100%;}
+.app{min-height: 100%; height: 100%;}
+html{cursor: none; height: 100%;}
+body{background-color: var(--shades-dark); overflow: hidden; overflow-y: scroll; min-height: 100%;}
 a{text-decoration: none; color: inherit; cursor: none;}
 
 /* Responsive Design CSS */
@@ -43,15 +43,15 @@ a{text-decoration: none; color: inherit; cursor: none;}
 
 /* Margin-top */
 
-/* .margin-top-15{
-  margin-top: 5%;
-} */
+.margin-top-15{
+  margin-top: 50%;
+}
 
 .margin-left-4{
   margin-left: 4.10%;
 }
 .margin-top-10{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .margin-top-4{
   margin-top: 4%;
@@ -132,44 +132,40 @@ a{text-decoration: none; color: inherit; cursor: none;}
 
 /* ------- */
 
+/* Fluid Design */
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.column .text{
+  width: 45%;
+}
+.column .image{
+  width: 45%;
+}
+.avatar-img{
+  background: rgba(223, 229, 244, 0.05);
+  border-radius: 18px;
+  height: 100vh;
+}
+.column .socials{
+  flex-wrap: wrap;
+  width: 10%;
+}
+.icon-socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon-socials img{
+  margin: 80% 0;
+  transform: rotate(-90deg);
+}
+/* ------------ */
 
-/* Landing Page Container for Image & Text */
-.ui.container{
-  width: auto;
-}
-
-/* Landing Image */
-
-/* .ui.rounded.image{
-  border-radius: 1.3rem !important;
-  background-color: #dfe5f41e;  
-} */
-.landing{
-  position: relative;
-  background: url(./assets/avatar.png) no-repeat center;
-  height: 700px;
-}
-.landing-image{
-  margin: auto;
-  max-width:100%;
-  filter: drop-shadow(-4px -4px 10px rgba(220, 220, 220, 0.76)) drop-shadow(4px 4px 10px 3px rgba(0, 0, 0, 0.733));
-}
-.ui.column.grid{
-  text-align: center;
-  font-weight: bolder;
-}
-.ui.grid>.column:not(.row){
-  margin: auto;
-}
-
-/* Landing Text Header */
-.ui.header{
-  font-family: 'Quicksand', sans-serif;
-  color: #dfe5f4;
-}
-/* .ui.header:first-child {
-  margin-top: 10%;
-} */
 .text-header{
   font-size: 45px!important;
   font-style: normal;
