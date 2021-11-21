@@ -72,11 +72,28 @@ text-align: center;
   left: 880px;
 }
 .line-2{
+  left: 935px;
   top: 440px;
 }
 .circle{
   top: 440px;
   left: 895px;
+}
+.scroll{
+  overflow: unset;
+  left: 0;
+  bottom: 0;
+} 
+.scroll-text{
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: 36px;
+  -webkit-transform: rotate(
+-90deg);
+  color: rgba(255, 215, 101, 0.5);
+  transform: rotate(-90deg);
 }
 
 /* Navigation Panel code */
@@ -112,7 +129,7 @@ text-align: center;
 
 /* Content */
 .content{
-  margin: 10% 0 0 5%;
+  margin: 10% 0 0 10%;
   position: relative;
   max-width: 45rem;
   text-align: left;
