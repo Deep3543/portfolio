@@ -81,6 +81,9 @@ nav{display: flex; justify-content: space-around; align-items: center; position:
   top: 440px;
   left: 895px;
 }
+.swirl{
+  top: 76.83px;
+}
 .scroll{
   overflow: unset;
   left: -2%;
@@ -126,6 +129,7 @@ nav{display: flex; justify-content: space-around; align-items: center; position:
 
 .nav-list li > .active{
   border-bottom: solid;
+  font-weight: 700;
 }
 
 .resume{
