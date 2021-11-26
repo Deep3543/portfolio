@@ -5,8 +5,9 @@ class Work extends Component{
         return(
             // Frame for Work Page
             <div className="work-container" id="work">
-                {/* Temp Content */}
-                Hey, This is work section.!
+                {/* Image Container */}
+{/* TODO: Create the work section and add atleast 2 work sections */}
+                This is Work Section!!!!
             </div>
         )
     }
