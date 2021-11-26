@@ -28,6 +28,7 @@ class Find extends Component{
                         </ul>
                     </div>
                 </div>
+                <footer className="credit"><span className="foot">Designed & Developed by </span><span className="foot-name">Deep Patel</span></footer>
             </div>
         )
     }
