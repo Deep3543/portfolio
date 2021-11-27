@@ -286,6 +286,12 @@ body::-webkit-scrollbar{
   align-items: center;
   color: var(--brand);
 }
+
+.i-find{
+  position: absolute;
+  z-index: -1;
+  margin: -0.456% -1.6%;
+}
 /* ---------------- */
 
 /* Footer CSS */
