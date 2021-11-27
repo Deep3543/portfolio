@@ -48,6 +48,7 @@ function App() {
       {/* TODO: Make Changes here */}
       < Work />
       < Find />
+      <footer className="credit"><span className="foot">Designed & Developed by </span><span className="foot-name">Deep Patel</span></footer>
     </div>
   );
 }
