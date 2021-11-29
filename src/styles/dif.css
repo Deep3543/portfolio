@@ -15,7 +15,7 @@ body{background-color: var(--shades-light);-ms-overflow-style: none; scrollbar-w
 a{text-decoration: none; color: inherit; cursor: none;}
 nav{display: flex; justify-content: space-around; align-items: center; position: fixed; left: 0; top: 0; width:100%; z-index: 1;}
 i{ margin: 3%; }
-button{ background: transparent; border-radius: 5px; border:none;}
+button{ padding: 4% 0; background: transparent; border-radius: 5px; border:none;}
 
 body::-webkit-scrollbar{
   display: none;
@@ -241,18 +241,90 @@ body::-webkit-scrollbar{
 /* Work Page CSS */
 
   /* Work Card */
-  .work-card{
-    margin: 5% 3% 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+  .work-cards{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0 5%;
+    list-style-type: none;
   }
+
+  .work-card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(30 * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;      
+    border-radius: calc(30 * 1px) 0 0 0;    
+    background-color: var(--shades-dark);      
+    transform: translateY(120%);
+    transition: .6s ease-in-out;
+  }
+  .work-card:hover .card-overlay {
+    transform: translateY(0);
+  }
+
     /* Work Image */
-    .img-work{
-      border-radius: 10px;
+    .card-img{
+      width: 100%;
+      height: auto;
     }
+
     /* Work Description */
+    .card-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2em;   
+      background-color: var(--shades-dark);
+      opacity: 50%;
+      transform: translateY(-130%);
+      transition: .6s ease-in-out;
+    }
+    .work-card:hover .card-header {
+      opacity: 1;
+      transform: translateY(0);
+      border-radius: calc(30 * 1px) 0 0 0; 
+    } 
+
+
+    .card-arc{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      bottom: 100%;
+      right: 0;      
+      z-index: 1;
+      transform: translateY(100%);
+      transition: .2s ease-in-out;
+    }
+    .work-card:hover .card-arc {
+      transform: translateY(0);
+    }
+
+    .card-arc path {
+      fill: var(--shades-dark);
+    }  
+
+    .card-description {
+      padding: 0 2em 0;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }    
+
     .work-desc{
       width: 40%;
       max-width: 45%;
@@ -260,17 +332,27 @@ body::-webkit-scrollbar{
     }
     .work-title{
       font-family: Satisfy;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 58px;
+      letter-spacing: 0.1em;
+      color: var(--brand);
+      margin: .3em 0 0 1.3em; 
+      transform: translateY(-30%);
+      transition: .4s ease-in;
     }
+
+    .work-card:hover .work-title {
+      font-size: 40px;
+      transform: translateY(0);
+    }
+
     .work-details{
       font-family: Quicksand;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 30px;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 26px;
       line-height: 37px;
+      letter-spacing: .045em;
       color: var(--accent-light);
     }
     /* Source Button */
