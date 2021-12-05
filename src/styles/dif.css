@@ -444,10 +444,11 @@ body::-webkit-scrollbar{
       }
 
       .card-overlay{
+        border-radius: 0 !important;
         position: relative;
-        transform: none;
-        transition: none;
-        background: none;
+        transform: none !important;
+        transition: none !important;
+        background: none !important;
       }
       .card-description{
         display: inline;
