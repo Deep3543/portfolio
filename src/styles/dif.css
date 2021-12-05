@@ -36,7 +36,7 @@ body::-webkit-scrollbar{
   #secondary { width:100%; margin:0; border:none; }
 }
 /* Responsive Typography */
-@media (min-width: 640px) { h1{font-size: 2rem !important;} body {font-size:1rem !important;} } 
+@media (min-width: 640px) { body {font-size:1rem !important;} } 
 @media (min-width:960px) { body {font-size:1.2rem !important;} } 
 @media (min-width:1100px) { body {font-size:1.5rem !important;} }
 
@@ -59,6 +59,12 @@ body::-webkit-scrollbar{
 
 /* Responsive Grids */
 @media (max-width: 800px) {
+  /* Content */
+  .content{ padding: 40% 0 30% 10% !important; }
+  .name{ margin-top: 20% !important; line-height: 140% !important; }
+  .details{ margin-top: 10% !important; }
+  .socials{ margin-top: 20% !important; }
+  .head{ margin: 0 !important; padding: 10% 0 0; }
   /* Find Me Questions */
   .find-ques {
     flex-flow: column wrap !important;
@@ -245,16 +251,16 @@ body::-webkit-scrollbar{
   font-family: 'Satisfy', cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 90px;
-  line-height: 130px;
+  font-size: 400%;
+  line-height: 120%;
 }
 .name{
   margin-top: 15%;
   font-family: Share Tech;
   font-style: normal;
   font-weight: normal;
-  font-size: 70px;
-  line-height: 79px;
+  font-size: 300%;
+  line-height: 110%;
   letter-spacing: 0.2em;
 }
 
@@ -300,8 +306,8 @@ body::-webkit-scrollbar{
   font-family: Share Tech;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 150%;
+  line-height: 160%;
   letter-spacing: 0.05em;
 }
 .socials{
@@ -425,6 +431,13 @@ body::-webkit-scrollbar{
       {
         transition: none !important;
         transform: none !important;
+      }
+      .card-header{
+        opacity: 1;
+      }
+      .work-cards{
+        margin: 4rem 0;
+        grid-gap: 4rem;
       }
       .card-arc{
         display: none;
