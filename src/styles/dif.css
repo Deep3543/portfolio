@@ -432,7 +432,7 @@ body::-webkit-scrollbar{
         transition: none !important;
         transform: none !important;
       }
-      .card-header{ opacity: 1; }
+      .card-header{ opacity: 1; border-radius: 0 !important; }
       .work-cards{ margin: 4rem 0; grid-gap: 4rem; }
       .card-arc{ display: none; }
       .work-title{ font-size: 30px !important;}
