@@ -8,8 +8,6 @@ class Nav extends Component{
     render(){
         return(
             <nav className="nav-bar">
-                {/* TODO: Add the highlight line below the active tab */}
-                {/* TODO: Make the Text Bold for the active tab */}
                 <div className="nav-content">
                     <ul className="nav-list">
                         <li>
@@ -33,6 +31,7 @@ class Nav extends Component{
                                 duration={900}
                             >Work</Link>
                         </li>
+{/* TODO: Add functionality to download pdf for the Resume button */}
                         <li>
                             <Link
                                 activeClass="active"
