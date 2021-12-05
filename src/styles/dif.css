@@ -61,12 +61,20 @@ body::-webkit-scrollbar{
 @media (max-width: 800px) {
   /* Find Me Questions */
   .find-ques {
-    flex-flow: column wrap;
+    flex-flow: column wrap !important;
+  }
+  .item-left, .item-right {
+    width: 100% !important;
   }
 
   /* Work Card */
   .work-card{
     flex-direction: column !important;
+  }
+
+  /* Back Design */
+  .back-svg{
+    display: none;
   }
 }
 
@@ -112,11 +120,16 @@ body::-webkit-scrollbar{
 .swirl{
   top: 76.83px;
 }
-.scroll{
+.scroll-left{
   overflow: unset;
   left: -2%;
   bottom: 3%;
 } 
+.scroll-right{
+  overflow: unset;
+  bottom: 3%;
+  right: -2%;
+}
 .scroll-text{
   font-family: 'Satisfy';
   font-style: normal;
