@@ -36,7 +36,7 @@ body::-webkit-scrollbar{
   #secondary { width:100%; margin:0; border:none; }
 }
 /* Responsive Typography */
-@media (min-width: 640px) { body {font-size:1rem !important;} } 
+@media (min-width: 640px) { h1{font-size: 2rem !important;} body {font-size:1rem !important;} } 
 @media (min-width:960px) { body {font-size:1.2rem !important;} } 
 @media (min-width:1100px) { body {font-size:1.5rem !important;} }
 
@@ -189,16 +189,16 @@ body::-webkit-scrollbar{
   height: 3px;
   background: #ffd66580;
   transform-origin: bottom right;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.7s ease-in-out;
   width: 100%;
 }
-
-.nav-list li a:hover::after{
-  font-size: 32px;
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media (hover: hover){
+  .nav-list li a:hover::after{
+    font-size: 32px;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
-
 .nav-list li> .active{
   color: var(--highlight);
   font-size: 32px;
@@ -214,11 +214,13 @@ body::-webkit-scrollbar{
   height: 4px;
   background: var(--highlight);
   transform: scaleX(1);
-  transition: width 0.4s ease-in-out;
+  transition: width 0.7s ease-in-out;
   width: 50%;
 }
-.nav-list li> .active:hover::after{
-  width: 100%;
+@media (hover: hover){
+  .nav-list li> .active:hover::after{
+    width: 100%;
+  }
 }
 
 .resume{
@@ -276,22 +278,23 @@ body::-webkit-scrollbar{
   position: absolute;
   left: 0;
   right: 0;
-  height: 79px;
+  height: 100%;
   background: #FFD765;
   bottom: 0;
   width: 95%;
   transition: all 0.8s ease-in-out;
 }
-.p-name:hover{
-  background: linear-gradient(to bottom, #FFD765, #FFD765 50%, #FFD765 100%);
-  color: transparent;
-  background-clip: text;
+@media (hover: hover){
+  .p-name:hover{
+    background: linear-gradient(to bottom, #FFD765, #FFD765 50%, #FFD765 100%);
+    color: transparent;
+    background-clip: text;
+  }
+  .span-name:hover::before{
+    height: 10px;
+    transform: translateY(15px);
+  }
 }
-.span-name:hover::before{
-  height: 10px;
-  transform: translateY(15px);
-}
-
 .details{
   margin-top: 5%;
   font-family: Share Tech;
@@ -342,10 +345,11 @@ body::-webkit-scrollbar{
     overflow: hidden;
     text-decoration: none;
   }
-  .work-card:hover {
-    cursor: pointer;
+  @media (hover: hover){
+    .work-card:hover {
+      cursor: pointer;
+    }
   }
-
   .card-overlay {
     position: absolute;
     bottom: 0;
@@ -357,10 +361,11 @@ body::-webkit-scrollbar{
     transform: translateY(120%);
     transition: .6s ease-in-out;
   }
-  .work-card:hover .card-overlay {
-    transform: translateY(0);
+  @media (hover: hover){
+    .work-card:hover .card-overlay {
+      transform: translateY(0);
+    }
   }
-
     /* Work Image */
     .card-img{
       width: 100%;
@@ -378,13 +383,13 @@ body::-webkit-scrollbar{
       transform: translateY(-130%);
       transition: .6s ease-in-out;
     }
-    .work-card:hover .card-header {
-      opacity: 1;
-      transform: translateY(0);
-      border-radius: calc(30 * 1px) 0 0 0; 
-    } 
-
-
+    @media (hover: hover){
+      .work-card:hover .card-header {
+        opacity: 1;
+        transform: translateY(0);
+        border-radius: calc(30 * 1px) 0 0 0; 
+      } 
+    }
     .card-arc{
       width: 80px;
       height: 80px;
@@ -395,8 +400,10 @@ body::-webkit-scrollbar{
       transform: translateY(100%);
       transition: .2s ease-in-out;
     }
-    .work-card:hover .card-arc {
-      transform: translateY(0);
+    @media (hover: hover){
+      .work-card:hover .card-arc {
+        transform: translateY(0);
+      }
     }
 
     .card-arc path {
@@ -410,7 +417,30 @@ body::-webkit-scrollbar{
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
-    }    
+    } 
+
+    @media (max-width: 800px) {
+      .card-header, 
+      .work-title
+      {
+        transition: none !important;
+        transform: none !important;
+      }
+      .card-arc{
+        display: none;
+      }
+
+      .card-overlay{
+        position: relative;
+        transform: none;
+        transition: none;
+        background: none;
+      }
+      .card-description{
+        display: inline;
+        overflow: visible;
+      }      
+    }   
 
     .work-desc{
       width: 40%;
@@ -428,9 +458,11 @@ body::-webkit-scrollbar{
       transition: .4s ease-in;
     }
 
-    .work-card:hover .work-title {
-      font-size: 40px;
-      transform: translateY(0);
+    @media (hover: hover){
+      .work-card:hover .work-title {
+        font-size: 40px;
+        transform: translateY(0);
+      }
     }
 
     .work-details{

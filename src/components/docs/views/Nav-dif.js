@@ -8,6 +8,7 @@ class Nav extends Component{
     render(){
         return(
             <nav className="nav-bar">
+{/* TODO: Make Nav Bar responsive with collapsed bar and icon */}
                 <div className="nav-content">
                     <ul className="nav-list">
                         <li>
