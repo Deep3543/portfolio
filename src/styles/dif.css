@@ -432,16 +432,10 @@ body::-webkit-scrollbar{
         transition: none !important;
         transform: none !important;
       }
-      .card-header{
-        opacity: 1;
-      }
-      .work-cards{
-        margin: 4rem 0;
-        grid-gap: 4rem;
-      }
-      .card-arc{
-        display: none;
-      }
+      .card-header{ opacity: 1; }
+      .work-cards{ margin: 4rem 0; grid-gap: 4rem; }
+      .card-arc{ display: none; }
+      .work-title{ font-size: 30px !important;}
 
       .card-overlay{
         border-radius: 0 !important;
