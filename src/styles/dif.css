@@ -4,6 +4,7 @@
   --accent-light: #6E85B2; 
   --shades-dark: #261C2C;
   --shades-light: #5C527F;
+  --highlight: #FFD765;
 }
 
 /* General Styling */
@@ -78,7 +79,7 @@ body::-webkit-scrollbar{
   left: 320px;
   width: 30px;
   height: 30px;
-  background-color: #dfe5f46b;
+  background-color: #ffd66546;
   border-radius: 50%;
   margin-top: -6px;
   margin-left: -5px;
@@ -145,6 +146,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-list li{
+  color: #ffd66580;
   margin: 5px 15px;
   padding: 10px;
   font-family: Quicksand;
@@ -156,16 +158,54 @@ body::-webkit-scrollbar{
 
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.nav-list li a:hover{
+.nav-list li a{
+  display: inline-block;
+  position: relative;
+}
+
+.nav-list li a::after,
+.nav-list li::after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  height: 3px;
+  background: #ffd66580;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.nav-list li a:hover::after{
   font-size: 32px;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.nav-list li > .active{
-  border-bottom: solid;
+.nav-list li> .active{
+  color: var(--highlight);
   font-size: 32px;
   font-weight: 700;
+
+}
+.nav-list li> .active::after{
+  content: '';
+  display: block;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  height: 4px;
+  background: var(--highlight);
+  transform: scaleX(1);
+  transition: width 0.4s ease-in-out;
+  width: 50%;
+}
+.nav-list li> .active:hover::after{
+  width: 100%;
 }
 
 .resume{
@@ -200,14 +240,45 @@ body::-webkit-scrollbar{
   font-weight: normal;
   font-size: 70px;
   line-height: 79px;
-  /* identical to box height */
-
   letter-spacing: 0.2em;
 }
-.name span{
+
+.p-name{
   font-family: Share Tech;
-  color: #FFD765;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #5C527F 0%, #5C527F 50%, #5C527F 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.8s ease-in-out;
+  white-space: nowrap;
 }
+.span-name{
+  position: relative;
+}
+.span-name::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 79px;
+  background: #FFD765;
+  bottom: 0;
+  width: 95%;
+  transition: all 0.8s ease-in-out;
+}
+.p-name:hover{
+  background: linear-gradient(to bottom, #FFD765, #FFD765 50%, #FFD765 100%);
+  color: transparent;
+  background-clip: text;
+}
+.span-name:hover::before{
+  height: 10px;
+  transform: translateY(15px);
+}
+
 .details{
   margin-top: 5%;
   font-family: Share Tech;
@@ -244,7 +315,7 @@ body::-webkit-scrollbar{
   .work-cards{
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
+    gap: 8rem;
     margin: 4rem 5vw;
     padding: 0 5%;
     list-style-type: none;

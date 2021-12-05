@@ -14,6 +14,7 @@ class Find extends Component{
                     <div className="find-ques-container">
                         {/* Questions for Find Me */}
 {/* FIXME: Need to fix the anchor tags to work for links */}
+{/* TODO: Create animation effects on hover for social icons */}
                         <ul className="find-ques">
                             <li className="item-left ques1">I Wanna work with/hire you?</li>
                             <li className="item-right ans1">
@@ -28,7 +29,8 @@ class Find extends Component{
                                         </clipPath>
                                         </defs>
                                     </svg>
-                                </i><a href="mailto:deeppatel3543@gmail.com" target="_blank">deeppatel3543@gmail.com</a></li>
+                                </i><a href="mailto:deeppatel3543@gmail.com" target="_blank">deeppatel3543@gmail.com</a>
+                            </li>
                             <li className="item-left ques2">Are You educated enough?</li>
                             <li className="item-right ans2">
                                 <i className="i-linkedin">
@@ -42,14 +44,16 @@ class Find extends Component{
                                         </clipPath>
                                         </defs>
                                     </svg>
-                                </i><a href="https://www.linkedin.com/in/deeppatel3543/" target="_blank">deeppatel3543</a></li>
+                                </i><a href="https://www.linkedin.com/in/deeppatel3543/" target="_blank">deeppatel3543</a>
+                            </li>
                             <li className="item-left ques3">What kind of project you do?</li>
                             <li className="item-right ans3">
                                 <i className="i-github">
                                     <svg className='i-find' width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9922 7.50492C5.81946 11.6461 4.77556e-07 15 7.69138 28.3219C14.9871 40.9585 17.6915 37.048 23.8702 35.8298C24.5911 35.5781 24.5915 35.0273 24.3883 34.6754C24.2049 34.3578 23.5863 33.3163 22.9391 32.2074C19.7901 35.0998 17.6554 33.1619 17.6554 33.1619C16.1758 31.9634 15.0879 32.0456 15.0879 32.0456C13.4317 31.8987 14.7104 31.1847 14.7104 31.1847C16.0685 30.5252 17.493 31.4068 17.493 31.4068C19.8279 32.7735 21.368 31.0984 21.9127 30.3311C21.5327 29.4028 21.5289 28.6211 21.7088 28.0736C18.6296 29.4037 14.9369 30.0125 11.9905 24.9091C11.1513 23.4555 10.9733 21.9735 11.2651 20.5623C10.9358 20.3041 9.70927 19.2073 9.35567 16.966C9.35567 16.966 10.2396 15.9779 13.7173 16.268C14.5829 15.3756 15.6081 14.5858 16.7085 13.9439C17.8155 13.3113 19.0138 12.8167 20.2212 12.5129C21.7061 9.35906 23.0022 9.08721 23.0022 9.08721C24.7676 10.514 25.1068 12.1245 25.1648 12.5373C26.5357 12.9885 27.7259 13.8861 28.5651 15.3397C31.5184 20.4549 29.1279 23.3346 26.4267 25.334C27.1311 25.4778 28.0153 26.0481 28.7322 27.2898C29.7604 29.0707 30.5742 30.5147 30.8271 30.9526C31.0317 31.3071 31.505 31.5864 32.0888 31.0762C36.2296 26.3352 40.9642 25.952 33.6696 13.3174C25.9834 0.00451053 20.1649 3.35781 12.9906 7.49986L12.9922 7.50492Z" fill="#6E85B2"/>
                                     </svg>
-                                </i><a href="https://github.com/Deep3543" target="_blank">Deep3543</a></li>
+                                </i><a href="https://github.com/Deep3543" target="_blank">Deep3543</a>
+                            </li>
                             <li className="item-left ques4">I just wanna say Hi to you!</li>
                             <li className="item-right ans4">
                                 <i className="i-insta">
@@ -63,7 +67,8 @@ class Find extends Component{
                                         </clipPath>
                                         </defs>
                                     </svg>
-                                </i><a href="https://www.instagram.com/deep_3543/" target="_blank">@deep_3543</a></li>
+                                </i><a href="https://www.instagram.com/deep_3543/" target="_blank">@deep_3543</a>
+                            </li>
                             <li className="item-left ques5">Do you have a side hobby?</li>
                             <li className="item-right ans5">
                                 <i className="i-insta">
@@ -77,7 +82,8 @@ class Find extends Component{
                                         </clipPath>
                                         </defs>
                                     </svg>
-                                </i><a href="https://www.instagram.com/deepclicks.ig/" target="_blank">@deepclicks.ig</a></li>
+                                </i><a href="https://www.instagram.com/deepclicks.ig/" target="_blank">@deepclicks.ig</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

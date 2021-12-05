@@ -19,7 +19,9 @@ class Skel extends Component{
                 {/* Cursor code */}
                 <div className="cursor" style={{left: this.state.left, top: this.state.top}} />
                 {/* Background elements */}
-                {/* TODO: Refine and adjust the line2 */}
+
+{/* TODO: Create Animations for the Background SVGs for better visuals */}
+{/* TODO: Refine and adjust the line2 */}
                 <div className="back-design">
                     <i className="back-svg line-1">
                         <svg width="15" height="240" viewBox="0 0 15 240" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,9 +51,10 @@ class Skel extends Component{
                 {/* Content */}
                 <div className="content">
                     <h1 className="greet">Howdy 👋</h1>
-                    <h3 className="name">It's <span>Deep</span> here!</h3>
+                    <h3 className="name">It's <span className="span-name"><p className="p-name">Deep</p></span> here!</h3>
                     <p className="details">A friendly neighborhood geek. <br /> [& part-time weeb]</p>
-                    
+
+{/* TODO: Add Hover Effects for the social handles */}
                     {/* Socials */}
                     <div className="socials">
                         <i className="github">

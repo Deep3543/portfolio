@@ -8,8 +8,6 @@ class Work extends Component{
             // Frame for Work Page
             <div className="work-container" id="work">
                 {/* Work Page Container */}
-{/* TODO: Create the work cards and add atleast 2 work cards */}
-{/* FIXME: Reformat the CSS to change the animation styles and look */}
                 <div className="work-content">
                     {/* Header */}
                     <h3 className="head work-header">A few pieces of my work that I am proud of!</h3>

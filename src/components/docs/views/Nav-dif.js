@@ -19,7 +19,7 @@ class Nav extends Component{
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
-                                duration={1000}
+                                duration={900}
                             >Home
                             </Link>
                         </li>
@@ -30,7 +30,7 @@ class Nav extends Component{
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
-                                duration={1000}
+                                duration={900}
                             >Work</Link>
                         </li>
                         <li>
@@ -40,7 +40,7 @@ class Nav extends Component{
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
-                                duration={1000}
+                                duration={900}
                             >Find Me</Link>
                         </li>
                         <li className='resume' name="Resume">
