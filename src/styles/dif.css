@@ -385,7 +385,7 @@ body::-webkit-scrollbar{
       align-items: center;
       gap: 2em;   
       background-color: var(--shades-dark);
-      opacity: 50%;
+      opacity: 1;
       transform: translateY(-130%);
       transition: .6s ease-in-out;
     }
