@@ -125,7 +125,9 @@ body::-webkit-scrollbar{
 }
 .swirl{
   top: 76.83px;
+  margin: 0 !important;
 }
+
 .scroll-left{
   overflow: unset;
   left: -2%;
