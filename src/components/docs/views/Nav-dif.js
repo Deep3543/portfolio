@@ -2,12 +2,25 @@ import React, {Component} from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 
 class Nav extends Component{
-    scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+    constructor(props){
+        super(props);
+        this.navbar = React.createRef();
+        this.state = {
+            activeClass : '',
+        }
+    }
+    componentDidMount(){
+        let top = this.navbar.current.offsetTop; 
+        console.log(top);  
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= top){
+                this.state.activeClass = 'sticky';
+            }
+        })
+    }
     render(){
         return(
-            <nav className="nav-bar">
+            <nav ref={this.navbar} className={`nav-bar ${this.state.activeClass}`}>
 {/* TODO: Make Nav Bar responsive with collapsed bar and icon */}
                 <div className="nav-content">
                     <ul className="nav-list">

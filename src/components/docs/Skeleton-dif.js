@@ -23,6 +23,36 @@ class Skel extends Component{
 {/* TODO: Create Animations for the Background SVGs for better visuals */}
 {/* TODO: Refine and adjust the line2 */}
                 <div className="back-design">
+                    <i className="back-svg swirl">
+                        <svg width="1187" height="754" viewBox="0 0 1187 754" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_263_141)">
+                            <path d="M416.032 27.7869C411.919 43.0902 407.722 50.1227 397 59.9998C397 59.9998 399.5 45.9998 396.5 31.9998C393.5 17.9998 384.5 9.49979 384.5 9.49979C398.788 13.1621 405.693 17.1227 416.032 27.7869Z" stroke="black" stroke-opacity="0.15" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <g filter="url(#filter1_d_263_141)">
+                            <path d="M334.501 47.4999C691.108 -68.5575 1425 184.5 1065 544.5C705 904.5 -464 620.5 211.5 324.5C487.5 203.558 657.5 281.5 657.5 281.5" stroke="black" stroke-opacity="0.2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_263_141" x="379.5" y="4.49933" width="61.5316" height="95.5005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="10" dy="25"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_263_141"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_263_141" result="shape"/>
+                            </filter>
+                            <filter id="filter1_d_263_141" x="0.197083" y="14.0169" width="1186.64" height="739.225" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="10" dy="25"/>
+                            <feGaussianBlur stdDeviation="5"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_263_141"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_263_141" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                    </i>
                     <i className="back-svg line-1">
                         <svg width="15" height="240" viewBox="0 0 15 240" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="7.5" y1="7.5" x2="7.50001" y2="232.5" stroke="black" stroke-opacity="0.3" stroke-width="15" stroke-linecap="round"/>
@@ -56,40 +86,40 @@ class Skel extends Component{
                     </span>
                 </div>
 
+{/* TODO: Add Hover Effects for the social handles */}
+                {/* Socials */}
+                <div className="socials">
+                    <i className="github">
+                        <a href="https://github.com/Deep3543" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.6666 36.6667V30.2167C26.7292 29.4219 26.6218 28.623 26.3517 27.873C26.0815 27.123 25.6549 26.439 25.1 25.8667C30.3333 25.2833 35.8333 23.3 35.8333 14.2C35.8329 11.873 34.9378 9.63533 33.3333 7.95C34.0931 5.91418 34.0394 3.66391 33.1833 1.66666C33.1833 1.66666 31.2166 1.08333 26.6666 4.13333C22.8467 3.09803 18.82 3.09803 15 4.13333C10.45 1.08333 8.48331 1.66666 8.48331 1.66666C7.62727 3.66391 7.57355 5.91418 8.33331 7.95C6.71686 9.64783 5.82085 11.9058 5.83331 14.25C5.83331 23.2833 11.3333 25.2667 16.5666 25.9167C16.0183 26.4833 15.5954 27.159 15.3255 27.8999C15.0556 28.6407 14.9447 29.4301 15 30.2167V36.6667M15 31.6667C6.66665 34.1667 6.66665 27.5 3.33331 26.6667L15 31.6667Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </i>
+                    <i className="linkedin">
+                        <a href="https://www.linkedin.com/in/deeppatel3543/" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.6667 13.3333C29.3189 13.3333 31.8624 14.3869 33.7378 16.2623C35.6131 18.1376 36.6667 20.6812 36.6667 23.3333V35H30V23.3333C30 22.4493 29.6488 21.6014 29.0237 20.9763C28.3986 20.3512 27.5507 20 26.6667 20C25.7826 20 24.9348 20.3512 24.3097 20.9763C23.6845 21.6014 23.3334 22.4493 23.3334 23.3333V35H16.6667V23.3333C16.6667 20.6812 17.7203 18.1376 19.5956 16.2623C21.471 14.3869 24.0145 13.3333 26.6667 13.3333V13.3333Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.99998 15H3.33331V35H9.99998V15Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66665 10C8.5076 10 9.99998 8.50763 9.99998 6.66668C9.99998 4.82573 8.5076 3.33334 6.66665 3.33334C4.8257 3.33334 3.33331 4.82573 3.33331 6.66668C3.33331 8.50763 4.8257 10 6.66665 10Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </i>
+                    <i className="email">
+                        <a href="mailto:deeppatel3543@gmail.com" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 34V7.00003C1 5.89546 1.89543 5.00003 3 5.00003H37C38.1046 5.00003 39 5.89546 39 7.00003V34C39 35.1046 38.1046 36 37 36H3C1.89543 36 1 35.1046 1 34Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 35V8.00003L19.7619 16.7568L35 8.00003V35" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </i>
+                </div>
+
                 {/* Content */}
                 <div className="content">
                     <h1 className="greet">Howdy 👋</h1>
                     <h3 className="name">It's <span className="span-name"><p className="p-name">Deep</p></span> here!</h3>
                     <p className="details">A friendly neighborhood geek. <br /> [& part-time weeb]</p>
-
-{/* TODO: Add Hover Effects for the social handles */}
-                    {/* Socials */}
-                    <div className="socials">
-                        <i className="github">
-                            <a href="https://github.com/Deep3543" target="_blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M26.6666 36.6667V30.2167C26.7292 29.4219 26.6218 28.623 26.3517 27.873C26.0815 27.123 25.6549 26.439 25.1 25.8667C30.3333 25.2833 35.8333 23.3 35.8333 14.2C35.8329 11.873 34.9378 9.63533 33.3333 7.95C34.0931 5.91418 34.0394 3.66391 33.1833 1.66666C33.1833 1.66666 31.2166 1.08333 26.6666 4.13333C22.8467 3.09803 18.82 3.09803 15 4.13333C10.45 1.08333 8.48331 1.66666 8.48331 1.66666C7.62727 3.66391 7.57355 5.91418 8.33331 7.95C6.71686 9.64783 5.82085 11.9058 5.83331 14.25C5.83331 23.2833 11.3333 25.2667 16.5666 25.9167C16.0183 26.4833 15.5954 27.159 15.3255 27.8999C15.0556 28.6407 14.9447 29.4301 15 30.2167V36.6667M15 31.6667C6.66665 34.1667 6.66665 27.5 3.33331 26.6667L15 31.6667Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </i>
-                        <i className="linkedin">
-                            <a href="https://www.linkedin.com/in/deeppatel3543/" target="_blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M26.6667 13.3333C29.3189 13.3333 31.8624 14.3869 33.7378 16.2623C35.6131 18.1376 36.6667 20.6812 36.6667 23.3333V35H30V23.3333C30 22.4493 29.6488 21.6014 29.0237 20.9763C28.3986 20.3512 27.5507 20 26.6667 20C25.7826 20 24.9348 20.3512 24.3097 20.9763C23.6845 21.6014 23.3334 22.4493 23.3334 23.3333V35H16.6667V23.3333C16.6667 20.6812 17.7203 18.1376 19.5956 16.2623C21.471 14.3869 24.0145 13.3333 26.6667 13.3333V13.3333Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.99998 15H3.33331V35H9.99998V15Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6.66665 10C8.5076 10 9.99998 8.50763 9.99998 6.66668C9.99998 4.82573 8.5076 3.33334 6.66665 3.33334C4.8257 3.33334 3.33331 4.82573 3.33331 6.66668C3.33331 8.50763 4.8257 10 6.66665 10Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </i>
-                        <i className="email">
-                            <a href="mailto:deeppatel3543@gmail.com" target="_blank">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 34V7.00003C1 5.89546 1.89543 5.00003 3 5.00003H37C38.1046 5.00003 39 5.89546 39 7.00003V34C39 35.1046 38.1046 36 37 36H3C1.89543 36 1 35.1046 1 34Z" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 35V8.00003L19.7619 16.7568L35 8.00003V35" stroke="#FFD765" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </i>
-                    </div>
                 </div>
             </div>
         )
