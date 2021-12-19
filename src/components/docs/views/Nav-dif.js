@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
+import Resume from '../../../assets/resume.pdf';
 
 class Nav extends Component{
     scrollToTop = () => {
@@ -12,6 +13,7 @@ class Nav extends Component{
                 <div className="nav-content">
                     <ul className="nav-list">
                         <li>
+
                             <Link 
                                 activeClass="active"
                                 to="home"
@@ -22,6 +24,7 @@ class Nav extends Component{
                             >Home
                             </Link>
                         </li>
+                        {/* Work Button */}
                         <li>
                             <Link
                                 activeClass="active"
@@ -32,7 +35,7 @@ class Nav extends Component{
                                 duration={900}
                             >Work</Link>
                         </li>
-{/* TODO: Add functionality to download pdf for the Resume button */}
+                        {/* Find Me Button */}
                         <li>
                             <Link
                                 activeClass="active"
@@ -43,8 +46,13 @@ class Nav extends Component{
                                 duration={900}
                             >Find Me</Link>
                         </li>
+                        {/* Resume Button */}
                         <li className='resume' name="Resume">
-                            <Link>
+                            <a
+                                href={Resume}
+                                download='Resume_Deep_Patel'
+                                target='_blank'
+                            >
                             Resume
                             <i className="i-download">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +62,7 @@ class Nav extends Component{
                                     <path d="M14.8298 18.75V3.75" stroke="#FFD765" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </i>
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
