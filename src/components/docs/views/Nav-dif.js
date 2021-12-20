@@ -1,15 +1,16 @@
-import React, {Component, useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 import Resume from '../../../assets/resume.pdf';
 
 // FIXME: Make the Nav Bar placed back when scrolled back
 const Nav = () => {
     const navbar = useRef(null);
-    const [navSticky, setNavSticky] = useState(false);
+    const [navSticky, setNavSticky] = useState("");
     const handleScroll = () => {
         const top = navbar.current.offsetTop;
         console.log(top);
-        window.scrollY >= top ? setNavSticky(true) : setNavSticky(false);
+        window.scrollY >= top ? setNavSticky("sticky") : setNavSticky("");
+        console.log(navSticky);
     }
 
     useEffect(() => {
@@ -18,9 +19,9 @@ const Nav = () => {
             window.removeEventListener('scroll', handleScroll); 
         };
     }, []);
-    let classSticky = navSticky ? 'sticky':'';
+    console.log(navSticky);
     return(
-        <nav ref={navbar} className={`nav-bar ${classSticky}`}>
+        <nav ref={navbar} className={`nav-bar ${navSticky}`}>
 {/* TODO: Make Nav Bar responsive with collapsed bar and icon */}
             <div className="nav-content">
                 <ul className="nav-list">

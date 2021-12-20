@@ -134,11 +134,7 @@ body::-webkit-scrollbar{
   left: -2%;
   bottom: 3%;
 } 
-.scroll-right{
-  overflow: unset;
-  bottom: 3%;
-  right: -2%;
-}
+
 .scroll-text{
   font-family: 'Satisfy';
   font-style: normal;
@@ -339,7 +335,7 @@ body::-webkit-scrollbar{
   line-height: 51px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #FFD765;
+  color: var(--accent-light);
 }
 /* ------- */
 
@@ -363,7 +359,7 @@ body::-webkit-scrollbar{
     display: block;
     height: 100%;  
     border-radius: calc(30 * 1px);
-    border: solid 5px var(--accent-dark);
+    border: solid 6px var(--accent-dark);
     overflow: hidden;
     text-decoration: none;
   }
@@ -520,7 +516,7 @@ body::-webkit-scrollbar{
 /* Find Me Page CSS */
 .find-container{
   position: relative;
-  z-index: 0;
+  z-index: -999;
   background-color: var(--backg-c2);
   padding: 0;
   width: 100%;
@@ -529,6 +525,7 @@ body::-webkit-scrollbar{
 
 .find-details{
   padding: 5% 0 0 10%;
+  color: var(--accent-dark);
 }
 
 .find-ques-container{
@@ -554,17 +551,17 @@ body::-webkit-scrollbar{
   align-items: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FFD765;
+  color: var(--accent-light);
 }
 .item-right{
   width: 30%;
   font-family: Share Tech;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 24px;
   line-height: 27px;
   align-items: center;
-  color: var(--brand);
+  color: var(--shades-dark);
 }
 
 .i-find{
@@ -588,7 +585,7 @@ body::-webkit-scrollbar{
   font-weight: normal;
   font-size: 24px;
   line-height: 35px;
-  color: rgba(209, 210, 249, 0.4);
+  color: rgba(62, 44, 65, 0.4);
 }
 .foot-name{
   font-family: Share Tech;
@@ -597,6 +594,6 @@ body::-webkit-scrollbar{
   font-size: 24px;
   line-height: 27px;
   text-decoration-line: underline;
-  color: rgba(255, 215, 101, 0.6);
+  color: rgba(110, 133, 178, 0.6);
 }
 /* ---------- */
