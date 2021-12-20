@@ -1,18 +1,16 @@
 import React, {Component, useEffect, useRef, useState} from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
 
-// TODO: Make the Nav Bar placed back when scrolled back
+// FIXME: Make the Nav Bar placed back when scrolled back
 const Nav = () => {
     const navbar = useRef(null);
     const [navSticky, setNavSticky] = useState(false);
     const handleScroll = () => {
         const top = navbar.current.offsetTop;
-        // const bottom = top + navbar.current.offsetHeight;
         console.log(top);
-        // console.log(bottom);
         window.scrollY >= top ? setNavSticky(true) : setNavSticky(false);
-        // window.scrollY >= bottom ? setNavSticky(false) : setNavSticky(true);
     }
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return() => {
