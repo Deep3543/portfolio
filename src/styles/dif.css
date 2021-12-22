@@ -111,14 +111,33 @@ body::-webkit-scrollbar{
   position: absolute;
   z-index: -999;
 }
+
 .line-1{
   top: 240px;
   left: 880px;
+  animation: moveLine1 10s infinite;
+  -webkit-animation: moveLine1 10s infinite;
 }
+/* Animated Line1 Code */
+@keyframes moveLine1 {
+  0%{transform: translateY(0);}
+  50%{transform: translateY(80%);}
+  100%{transform: translateY(0);}
+}
+
 .line-2{
   left: 935px;
   top: 440px;
+  animation: moveLine2 10s infinite;
+  -webkit-animation: moveLine2 10s infinite;
 }
+/* Animated Line2 Code */
+@keyframes moveLine2 {
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-80%);}
+  100%{transform: translateY(0);}
+}
+
 .circle{
   top: 440px;
   left: 895px;
