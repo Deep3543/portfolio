@@ -114,7 +114,7 @@ body::-webkit-scrollbar{
 }
 
 .line-1{
-  top: 240px;
+  top: 140px;
   left: 880px;
   animation: moveLine1 10s infinite;
   -webkit-animation: moveLine1 10s infinite;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar{
 
 .line-2{
   left: 935px;
-  top: 440px;
+  top: 340px;
   animation: moveLine2 10s infinite;
   -webkit-animation: moveLine2 10s infinite;
 }
@@ -140,7 +140,7 @@ body::-webkit-scrollbar{
 }
 
 .circle{
-  top: 440px;
+  top: 340px;
   left: 895px;
 }
 .bg-swirl{
