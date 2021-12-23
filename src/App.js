@@ -1,10 +1,8 @@
 import React from 'react';
-import Skeleton from './components/docs/Skeleton';
 import Work from './components/docs/Work';
 import Find from './components/docs/Find';
 import Nav from './components/docs/views/Nav-dif';
 import Skel from './components/docs/Skeleton-dif';
-import {Link, animateScroll as scroll} from 'react-scroll';
 
 
 function App() {
@@ -12,7 +10,7 @@ function App() {
     <div className="app">
       {/* Back Design */}
       <i className="back-svg swirl">
-        <svg width="1359" height="3232" viewBox="0 0 1359 3232" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='bg-swirl' width="1359" height="3232" viewBox="0 0 1359 3232" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_263_141)">
           <path d="M424.031 27.7871C419.918 43.0904 415.721 50.1229 405 60C405 60 407.5 46 404.5 32C401.5 18 392.5 9.49999 392.5 9.49999C406.788 13.1623 413.693 17.1229 424.031 27.7871Z" stroke="black" stroke-opacity="0.15" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
           </g>
