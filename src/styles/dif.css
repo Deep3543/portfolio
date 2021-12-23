@@ -143,6 +143,11 @@ body::-webkit-scrollbar{
   top: 440px;
   left: 895px;
 }
+.bg-swirl{
+  width: 100%;
+  height: 100%;
+}
+
 .swirl{
   left: 70.2px;
   top: 0px;
@@ -153,6 +158,11 @@ body::-webkit-scrollbar{
   left: -2%;
   bottom: 3%;
 } 
+.scroll-right{
+  overflow: unset;
+  bottom: 3%;
+  right: 0;
+}
 
 .scroll-text{
   font-family: 'Satisfy';

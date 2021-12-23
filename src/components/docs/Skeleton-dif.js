@@ -24,7 +24,7 @@ class Skel extends Component{
 {/* TODO: Refine and adjust the line2 */}
                 <div className="back-design">
                     <i className="back-svg swirl">
-                        <svg width="1187" height="754" viewBox="0 0 1187 754" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="bg-swirl" width="1187" height="754" viewBox="0 0 1187 754" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_263_141)">
                             <path d="M416.032 27.7869C411.919 43.0902 407.722 50.1227 397 59.9998C397 59.9998 399.5 45.9998 396.5 31.9998C393.5 17.9998 384.5 9.49979 384.5 9.49979C398.788 13.1621 405.693 17.1227 416.032 27.7869Z" stroke="black" stroke-opacity="0.15" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </g>
@@ -69,6 +69,14 @@ class Skel extends Component{
                         </svg>
                     </i>
                     <span className="back-svg scroll-left">
+                        <p className="scroll-text">Scroll Down</p>
+                        <i className="arrow-down">
+                            <svg width="16" height="67" viewBox="0 0 16 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1C9 0.447715 8.55228 -2.41411e-08 8 0C7.44772 2.41411e-08 7 0.447715 7 1L9 1ZM7.2929 66.7071C7.68342 67.0976 8.31659 67.0976 8.70711 66.7071L15.0711 60.3431C15.4616 59.9526 15.4616 59.3195 15.0711 58.9289C14.6805 58.5384 14.0474 58.5384 13.6569 58.9289L8 64.5858L2.34315 58.9289C1.95262 58.5384 1.31946 58.5384 0.928935 58.9289C0.53841 59.3195 0.53841 59.9526 0.928935 60.3431L7.2929 66.7071ZM7 1L7 66L9 66L9 1L7 1Z" fill="#D1D2F9" fill-opacity="0.5"/>
+                            </svg>
+                        </i>
+                    </span>
+                    <span className="back-svg scroll-right">
                         <p className="scroll-text">Scroll Down</p>
                         <i className="arrow-down">
                             <svg width="16" height="67" viewBox="0 0 16 67" fill="none" xmlns="http://www.w3.org/2000/svg">
