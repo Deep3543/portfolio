@@ -10,6 +10,9 @@ const Nav = () => {
         const top = navbar.current.offsetTop;
         console.log(top);
         window.scrollY >= top ? setNavSticky(true) : setNavSticky(false);
+        if(navSticky == true && window.scrollY <= '100vh'){
+            setNavSticky(false);
+        }
     }
 
     useEffect(() => {
