@@ -50,7 +50,7 @@ class Nav extends Component{
                         <li className='resume' name="Resume">
                             <a
                                 href={Resume}
-                                // download='Resume_Deep_Patel'
+                                download='Resume_Deep_Patel'
                                 target="_blank"
                             >
                             Resume
