@@ -51,7 +51,6 @@ class Nav extends Component{
                             <a
                                 href={Resume}
                                 download='Resume_Deep_Patel'
-                                target='_blank'
                             >
                             Resume
                             <i className="i-download">
