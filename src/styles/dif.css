@@ -475,7 +475,8 @@ body::-webkit-scrollbar{
         transform: none !important;
       }
       .card-header{ opacity: 1; border-radius: 0 !important; }
-      .work-cards{ margin: 4rem 0; grid-gap: 4rem; }
+      .work-cards{ grid-gap: 4rem; }
+      .work-cards:first-child{ margin: 4rem 0; }
       .card-arc{ display: none; }
       .work-title{ font-size: 30px !important;}
 
@@ -565,7 +566,7 @@ body::-webkit-scrollbar{
 .find-ques{
   list-style-type: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 .find-ques>li{
   padding: 1.5%;
@@ -584,7 +585,7 @@ body::-webkit-scrollbar{
   color: var(--accent-light);
 }
 .item-right{
-  width: 30%;
+  width: 35%;
   font-family: Share Tech;
   font-style: normal;
   font-weight: 600;
@@ -592,6 +593,9 @@ body::-webkit-scrollbar{
   line-height: 27px;
   align-items: center;
   color: var(--shades-dark);
+}
+.item-right>i{
+  margin: 0;
 }
 
 .i-find{
