@@ -27,7 +27,6 @@ const Nav = () => {
             <div className="nav-content">
                 <ul className="nav-list">
                     <li>
-
                         <Link 
                             activeClass="active"
                             to="home"
