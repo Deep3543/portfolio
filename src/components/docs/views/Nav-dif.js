@@ -11,7 +11,7 @@ const Nav = () => {
         console.log(top);
         console.log(height);
         window.scrollY >= top ? setNavSticky(true) : setNavSticky(false);
-        window.scrollY <= height ? setNavSticky(false) : setNavSticky(true);
+        window.scrollY <= (height - 1) ? setNavSticky(false) : setNavSticky(true);
     }
 
     useEffect(() => {
