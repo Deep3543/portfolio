@@ -83,6 +83,11 @@ body::-webkit-scrollbar{
   .back-svg{
     display: none;
   }
+  .swirl {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* ---------------------- */
@@ -186,6 +191,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-list{
+  width: 100vw;
   list-style-type: none;
   display: flex;
   flex-direction: row;
