@@ -5,6 +5,7 @@
   --shades-dark: #261C2C;
   --shades-light: #5C527F;
   --highlight: #FFD765;
+  --backg-c2: #EDFBFF;
 }
 
 /* General Styling */
@@ -14,7 +15,7 @@ body, html{font-size: 100%; min-height: 100%; scroll-behavior: smooth;}
 html{cursor: none; height: 100%;}
 body{background-color: var(--shades-light);-ms-overflow-style: none; scrollbar-width: none; min-height: 100%;}
 a{text-decoration: none; color: inherit; cursor: none;}
-nav{display: flex; justify-content: space-around; align-items: center; position: fixed; left: 0; top: 0; width:100%; z-index: 1;}
+nav{display: flex; justify-content: space-around; align-items: center; width:100%; z-index: 1; background-color: var(--shades-light);}
 i{ margin: 3%; }
 button{ padding: 4% 0; background: transparent; border-radius: 5px; border:none;}
 
@@ -63,7 +64,7 @@ body::-webkit-scrollbar{
   .content{ padding: 40% 0 30% 10% !important; }
   .name{ margin-top: 20% !important; line-height: 140% !important; }
   .details{ margin-top: 10% !important; }
-  .socials{ margin-top: 20% !important; }
+  .socials{ margin-top: 2% !important; }
   .head{ margin: 0 !important; padding: 10% 0 0; }
   /* Find Me Questions */
   .find-ques {
@@ -102,6 +103,7 @@ body::-webkit-scrollbar{
 
 .frame{
   text-align: center;
+  height: 100vh;
 }
 
 /* Background elements */
@@ -113,7 +115,7 @@ body::-webkit-scrollbar{
 }
 
 .line-1{
-  top: 240px;
+  top: 140px;
   left: 880px;
   animation: moveLine1 10s infinite;
   -webkit-animation: moveLine1 10s infinite;
@@ -127,7 +129,7 @@ body::-webkit-scrollbar{
 
 .line-2{
   left: 935px;
-  top: 440px;
+  top: 340px;
   animation: moveLine2 10s infinite;
   -webkit-animation: moveLine2 10s infinite;
 }
@@ -139,16 +141,17 @@ body::-webkit-scrollbar{
 }
 
 .circle{
-  top: 440px;
+  top: 340px;
   left: 895px;
 }
 .bg-swirl{
   width: 100%;
   height: 100%;
 }
+
 .swirl{
-  top: 76.83px;
-  margin: 0 !important;
+  left: 70.2px;
+  top: 0px;
 }
 
 .scroll-left{
@@ -161,6 +164,7 @@ body::-webkit-scrollbar{
   bottom: 3%;
   right: 0;
 }
+
 .scroll-text{
   font-family: 'Satisfy';
   font-style: normal;
@@ -176,9 +180,10 @@ body::-webkit-scrollbar{
 
 /* Navigation Panel code */
 
-/* .nav-bar{
-  box-shadow: 0px 1px 10px rgba(255, 215, 101, 0.2);
-} */
+.nav-bar{
+  box-shadow: 0px 1px 4px 4px rgb(74 66 102);
+  z-index: 2;
+}
 
 .nav-list{
   list-style-type: none;
@@ -262,6 +267,12 @@ body::-webkit-scrollbar{
   margin:10px 0 0 5px;
 }
 
+/* The sticky class is added with JS when reached its scroll position */
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /* --------------------- */
 
@@ -336,14 +347,17 @@ body::-webkit-scrollbar{
   letter-spacing: 0.05em;
 }
 .socials{
-  margin-top: 5%;
+  position: absolute;
+  top: 1%;
+  text-align: right;
+  width: 100%;
 }
-.github{
-  margin-left: 0;
+.socials> i {
+  margin: 0 1.5%;
 }
 
 .head{
-  margin: 8% 0 0;
+  padding: 8% 0 0;
   font-family: Share Tech;
   font-style: normal;
   font-weight: normal;
@@ -351,20 +365,22 @@ body::-webkit-scrollbar{
   line-height: 51px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #FFD765;
+  color: var(--accent-light);
 }
 /* ------- */
 
 
 /* Work Page CSS */
 
+  .work-container{ background-color: var(--backg-c2); }
+
   /* Work Card */
   .work-cards{
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 8rem;
-    margin: 4rem 5vw;
-    padding: 0 5%;
+    gap: 4rem;
+    margin: 0 1vw;
+    padding: 3% 5%;
     list-style-type: none;
   }
 
@@ -373,9 +389,11 @@ body::-webkit-scrollbar{
     display: block;
     height: 100%;  
     border-radius: calc(30 * 1px);
+    border: solid 6px var(--accent-dark);
     overflow: hidden;
     text-decoration: none;
   }
+
   @media (hover: hover){
     .work-card:hover {
       cursor: pointer;
@@ -386,10 +404,10 @@ body::-webkit-scrollbar{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;      
+    z-index: 1;      
     border-radius: calc(30 * 1px) 0 0 0;    
     background-color: var(--shades-dark);      
-    transform: translateY(120%);
+    transform: translateY(80%);
     transition: .6s ease-in-out;
   }
   @media (hover: hover){
@@ -411,7 +429,6 @@ body::-webkit-scrollbar{
       gap: 2em;   
       background-color: var(--shades-dark);
       opacity: 1;
-      transform: translateY(-130%);
       transition: .6s ease-in-out;
     }
     @media (hover: hover){
@@ -458,7 +475,8 @@ body::-webkit-scrollbar{
         transform: none !important;
       }
       .card-header{ opacity: 1; border-radius: 0 !important; }
-      .work-cards{ margin: 4rem 0; grid-gap: 4rem; }
+      .work-cards{ grid-gap: 4rem; }
+      .work-cards:first-child{ margin: 4rem 0; }
       .card-arc{ display: none; }
       .work-title{ font-size: 30px !important;}
 
@@ -528,6 +546,9 @@ body::-webkit-scrollbar{
 
 /* Find Me Page CSS */
 .find-container{
+  position: relative;
+  z-index: -999;
+  background-color: var(--backg-c2);
   padding: 0;
   width: 100%;
   height: 100%;
@@ -535,6 +556,7 @@ body::-webkit-scrollbar{
 
 .find-details{
   padding: 5% 0 0 10%;
+  color: var(--accent-dark);
 }
 
 .find-ques-container{
@@ -544,7 +566,7 @@ body::-webkit-scrollbar{
 .find-ques{
   list-style-type: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 .find-ques>li{
   padding: 1.5%;
@@ -560,31 +582,36 @@ body::-webkit-scrollbar{
   align-items: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FFD765;
+  color: var(--accent-light);
 }
 .item-right{
-  width: 30%;
+  width: 35%;
   font-family: Share Tech;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 24px;
   line-height: 27px;
   align-items: center;
-  color: var(--brand);
+  color: var(--shades-dark);
+}
+.item-right>i{
+  margin: 0;
 }
 
 .i-find{
   position: absolute;
   z-index: -1;
+  opacity: 50%;
   margin: -0.456% -1.6%;
 }
 /* ---------------- */
 
 /* Footer CSS */
 .credit{
-  bottom: 1%;
-  margin: 5% 1% 0 0;
-  float: right;
+  background-color: var(--backg-c2);
+  width: 100%;
+  padding: 5% 0 0;
+  text-align: right;
 }
 .foot{
   font-family: Satisfy;
@@ -592,7 +619,7 @@ body::-webkit-scrollbar{
   font-weight: normal;
   font-size: 24px;
   line-height: 35px;
-  color: rgba(209, 210, 249, 0.4);
+  color: rgba(62, 44, 65, 0.4);
 }
 .foot-name{
   font-family: Share Tech;
@@ -601,6 +628,6 @@ body::-webkit-scrollbar{
   font-size: 24px;
   line-height: 27px;
   text-decoration-line: underline;
-  color: rgba(255, 215, 101, 0.6);
+  color: rgba(110, 133, 178, 0.6);
 }
 /* ---------- */

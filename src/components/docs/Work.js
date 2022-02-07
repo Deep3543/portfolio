@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Nav from '../docs/views/Nav-dif';
 import Work1 from '../../assets/w_paperstate.png';
 import Work2 from '../../assets/w_deakintrack.png';
 
@@ -7,6 +8,7 @@ class Work extends Component{
         return(
             // Frame for Work Page
             <div className="work-container" id="work">
+                      < Nav />
                 {/* Work Page Container */}
                 <div className="work-content">
                     {/* Header */}

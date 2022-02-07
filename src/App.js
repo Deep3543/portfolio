@@ -1,14 +1,13 @@
 import React from 'react';
 import Work from './components/docs/Work';
 import Find from './components/docs/Find';
-import Nav from './components/docs/views/Nav-dif';
 import Skel from './components/docs/Skeleton-dif';
 
 
 function App() {
   return (
     <div className="app">
-      {/* Back Design */}
+    {/* Back Design */}
       <i className="back-svg swirl">
         <svg className='bg-swirl' width="1359" height="3232" viewBox="0 0 1359 3232" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_263_141)">
@@ -41,9 +40,7 @@ function App() {
       </i>
       {/* < Nav />
       < Skeleton /> */}
-      < Nav />
       < Skel />
-      {/* TODO: Make Changes here */}
       < Work />
       < Find />
       <footer className="credit"><span className="foot">Designed & Developed by </span><span className="foot-name">Deep Patel</span></footer>
