@@ -609,7 +609,7 @@ body::-webkit-scrollbar{
 .i-find{
   position: absolute;
   z-index: -1;
-  opacity: 50%;
+  opacity: 1%;
   margin: -0.456% -1.6%;
 }
 /* ---------------- */
