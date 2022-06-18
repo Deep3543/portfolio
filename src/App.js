@@ -1,7 +1,6 @@
-import React from 'react';
-import Work from './components/docs/Work';
 import Find from './components/docs/Find';
 import Skel from './components/docs/Skeleton-dif';
+import Work from './components/docs/Work';
 
 
 function App() {

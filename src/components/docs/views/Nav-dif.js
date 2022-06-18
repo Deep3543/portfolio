@@ -1,10 +1,11 @@
-import React, {Component, useEffect, useRef, useState} from 'react';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-scroll';
 import Resume from '../../../assets/resume.pdf';
 
 const Nav = () => {
     const navbar = useRef(null);
     const [navSticky, setNavSticky] = useState(false);
+    
     const handleScroll = () => {
         const height = document.documentElement.clientHeight;
         const top = navbar.current.offsetTop;
@@ -19,7 +20,7 @@ const Nav = () => {
         return() => {
             window.removeEventListener('scroll', handleScroll); 
         };
-    }, []);
+    });
     let classSticky = navSticky ? 'sticky':'';
     return(
         <nav ref={navbar} className={`nav-bar ${classSticky}`}>
@@ -65,6 +66,7 @@ const Nav = () => {
                             href={Resume}
                             download='Resume_Deep_Patel'
                             target='_blank'
+                            rel="noreferrer"
                         >
                         Resume
                         <i className="i-download">

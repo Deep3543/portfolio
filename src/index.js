@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/dif.css'
+import './styles/dif.css';
 // import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
