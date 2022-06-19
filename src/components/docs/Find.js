@@ -15,7 +15,7 @@ class Find extends Component {
                     <h3 className="head find-header">Where am I?</h3>
                     {/* Description */}
                     <p className="details find-details">
-                        I am based in Gold Coast - Queensland.
+                        I am based in Townsville - Queensland.
                     </p>
                     <div className="find-ques-container">
                         {/* Questions for Find Me */}
