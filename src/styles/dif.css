@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
 @media (max-width: 767px) {
     .cursor {
         cursor: pointer;
+        display: none;
     }
 }
 
