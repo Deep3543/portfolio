@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
 /* Responsive Cursors */
 @media (max-width: 767px) {
     .cursor {
-        display: none;
+        cursor: pointer;
     }
 }
 
@@ -149,11 +149,17 @@ body::-webkit-scrollbar {
     }
     /* Find Me Questions */
     .find-ques {
-        flex-flow: column wrap !important;
+        grid-auto-flow: unset !important;
+        grid-template-columns: unset !important;
     }
     .item-left,
     .item-right {
         width: 100% !important;
+    }
+
+    .item-right {
+        display: flex;
+        gap: 1em;
     }
 
     /* Work Card */
@@ -165,12 +171,8 @@ body::-webkit-scrollbar {
     .back-svg {
         display: none;
     }
-    .swirl {
-        display: block !important;
-        left: 0 !important;
-        width: 100vw;
-        height: 100vh;
-        margin: 0 !important;
+    .frame {
+        background-image: none !important;
     }
 }
 
@@ -178,7 +180,7 @@ body::-webkit-scrollbar {
 
 /* Cursor code */
 .cursor {
-    position: absolute;
+    position: fixed;
     top: 300px;
     left: 320px;
     width: 30px;
@@ -188,11 +190,17 @@ body::-webkit-scrollbar {
     margin-top: -6px;
     margin-left: -5px;
     filter: blur(1px);
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .frame {
     text-align: center;
     height: 100vh;
+    background-image: url("../assets/bg-swirl.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 /* Background elements */
@@ -680,13 +688,14 @@ body::-webkit-scrollbar {
 }
 
 .find-ques-container {
-    margin: 3% 10% 0 15%;
+    margin: 3% 10% 0 10%;
 }
 
 .find-ques {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr auto;
+    row-gap: 1.2rem;
 }
 .find-ques > li {
     padding: 1.5%;
