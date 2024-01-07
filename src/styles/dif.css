@@ -186,11 +186,12 @@ body::-webkit-scrollbar {
     left: 320px;
     width: 30px;
     height: 30px;
-    background-color: #ffd66546;
+    background-color: #ffd765;
     border-radius: 50%;
     margin-top: -6px;
     margin-left: -5px;
-    filter: blur(1px);
+    filter: contrast(0.8) blur(1px);
+    mix-blend-mode: luminosity;
     z-index: 9999;
     pointer-events: none;
 }
