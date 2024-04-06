@@ -1,3 +1,5 @@
+import "animate.css";
+
 import { ReactComponent as Email } from "../../assets/icons/home_email.svg";
 import { ReactComponent as Github } from "../../assets/icons/home_github.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/home_linkedin.svg";
@@ -77,7 +79,7 @@ export default function Skel() {
                     </span> */}
                 <span className="back-svg scroll-right">
                     <p className="scroll-text">scroll down</p>
-                    <i className="arrow-down">
+                    <i className="arrow-down animate__animated animate__bounce">
                         <svg
                             width="16"
                             height="67"

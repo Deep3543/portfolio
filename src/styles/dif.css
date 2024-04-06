@@ -20,6 +20,8 @@ html {
     font-size: 100%;
     min-height: 100%;
     scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .app {
     min-height: 100%;
@@ -58,8 +60,22 @@ button {
     border: none;
 }
 
+html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-    display: none;
+    background: transparent;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d1d1f9ab;
+    border-radius: 18px;
+}
+
+::-webkit-scrollbar-track {
+    position: absolute;
+    background: transparent;
+    width: 1rem;
 }
 
 /* Responsive Design CSS */
@@ -274,6 +290,16 @@ body::-webkit-scrollbar {
     overflow: unset;
     bottom: 3%;
     right: 0;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 20px, 0);
+    }
 }
 
 .scroll-text {
