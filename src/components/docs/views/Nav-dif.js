@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+
 import { Link } from 'react-scroll';
 import Resume from '../../../assets/resume.pdf';
 
@@ -9,8 +10,6 @@ const Nav = () => {
     const handleScroll = () => {
         const height = document.documentElement.clientHeight;
         const top = navbar.current.offsetTop;
-        console.log(top);
-        console.log(height);
         window.scrollY >= top ? setNavSticky(true) : setNavSticky(false);
         window.scrollY <= (height - 1) ? setNavSticky(false) : setNavSticky(true);
     }
