@@ -11,7 +11,7 @@ export default function Skel() {
             {/* Background elements */}
 
             <div className="back-design">
-                <i className="back-svg line-1">
+                <div className="icon back-svg line-1">
                     <svg
                         width="15"
                         height="240"
@@ -25,13 +25,13 @@ export default function Skel() {
                             x2="7.50001"
                             y2="232.5"
                             stroke="black"
-                            stroke-opacity="0.3"
-                            stroke-width="15"
-                            stroke-linecap="round"
+                            strokeOpacity="0.3"
+                            strokeWidth="15"
+                            strokeLinecap="round"
                         />
                     </svg>
-                </i>
-                <i className="back-svg circle">
+                </div>
+                <div className="icon back-svg circle">
                     <svg
                         width="40"
                         height="40"
@@ -44,11 +44,11 @@ export default function Skel() {
                             cy="20"
                             r="20"
                             fill="black"
-                            fill-opacity="0.3"
+                            fillOpacity="0.3"
                         />
                     </svg>
-                </i>
-                <i className="back-svg line-2">
+                </div>
+                <div className="icon back-svg line-2">
                     <svg
                         width="15"
                         height="240"
@@ -62,24 +62,15 @@ export default function Skel() {
                             x2="7.50001"
                             y2="232.5"
                             stroke="black"
-                            stroke-opacity="0.3"
-                            stroke-width="15"
-                            stroke-linecap="round"
+                            strokeOpacity="0.3"
+                            strokeWidth="15"
+                            strokeLinecap="round"
                         />
                     </svg>
-                </i>
-                {/* Temporarily not needed */}
-                {/* <span className="back-svg scroll-left">
-                        <p className="scroll-text">Scroll Down</p>
-                        <i className="arrow-down">
-                            <svg width="16" height="67" viewBox="0 0 16 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 1C9 0.447715 8.55228 -2.41411e-08 8 0C7.44772 2.41411e-08 7 0.447715 7 1L9 1ZM7.2929 66.7071C7.68342 67.0976 8.31659 67.0976 8.70711 66.7071L15.0711 60.3431C15.4616 59.9526 15.4616 59.3195 15.0711 58.9289C14.6805 58.5384 14.0474 58.5384 13.6569 58.9289L8 64.5858L2.34315 58.9289C1.95262 58.5384 1.31946 58.5384 0.928935 58.9289C0.53841 59.3195 0.53841 59.9526 0.928935 60.3431L7.2929 66.7071ZM7 1L7 66L9 66L9 1L7 1Z" fill="#D1D2F9" fill-opacity="0.5"/>
-                            </svg>
-                        </i>
-                    </span> */}
+                </div>
                 <span className="back-svg scroll-right">
                     <p className="scroll-text">scroll down</p>
-                    <i className="arrow-down animate__animated animate__bounce">
+                    <div className="icon arrow-down animate__animated animate__bounce">
                         <svg
                             width="16"
                             height="67"
@@ -90,17 +81,17 @@ export default function Skel() {
                             <path
                                 d="M9 1C9 0.447715 8.55228 -2.41411e-08 8 0C7.44772 2.41411e-08 7 0.447715 7 1L9 1ZM7.2929 66.7071C7.68342 67.0976 8.31659 67.0976 8.70711 66.7071L15.0711 60.3431C15.4616 59.9526 15.4616 59.3195 15.0711 58.9289C14.6805 58.5384 14.0474 58.5384 13.6569 58.9289L8 64.5858L2.34315 58.9289C1.95262 58.5384 1.31946 58.5384 0.928935 58.9289C0.53841 59.3195 0.53841 59.9526 0.928935 60.3431L7.2929 66.7071ZM7 1L7 66L9 66L9 1L7 1Z"
                                 fill="#D1D2F9"
-                                fill-opacity="0.5"
+                                fillOpacity="0.5"
                             />
                         </svg>
-                    </i>
+                    </div>
                 </span>
             </div>
 
             {/* TODO: Add Hover Effects for the social handles */}
             {/* Socials */}
             <div className="socials">
-                <i className="github">
+                <div className="icon github">
                     <a
                         href="https://github.com/Deep3543"
                         target="_blank"
@@ -108,8 +99,8 @@ export default function Skel() {
                     >
                         <Github />
                     </a>
-                </i>
-                <i className="linkedin">
+                </div>
+                <div className="icon linkedin">
                     <a
                         href="https://www.linkedin.com/in/deeppatel3543/"
                         target="_blank"
@@ -117,8 +108,8 @@ export default function Skel() {
                     >
                         <Linkedin />
                     </a>
-                </i>
-                <i className="email">
+                </div>
+                <div className="icon email">
                     <a
                         href="mailto:deeppatel3543@gmail.com"
                         target="_blank"
@@ -126,7 +117,7 @@ export default function Skel() {
                     >
                         <Email />
                     </a>
-                </i>
+                </div>
             </div>
 
             {/* Content */}

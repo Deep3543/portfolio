@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Landing from "../../assets/avatar.png";
 import Email from "../../assets/icon_email.png";
 import GitHub from "../../assets/icon_github.png";
+import Landing from "../../assets/avatar.png";
 import LinkedIn from "../../assets/icon_linkedin.png";
 
 class HomeSkeleton extends Component {
@@ -65,16 +65,16 @@ class HomeSkeleton extends Component {
                                     <path
                                         d="M-5.70831 17.5H14.7084"
                                         stroke="#F0CDB8"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                     />
                                     <path
                                         d="M17.5 7.29163L27.7083 17.5L17.5 27.7083"
                                         stroke="#F0CDB8"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        strokeWidth="3"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
                                     />
                                 </g>
                                 <defs>
