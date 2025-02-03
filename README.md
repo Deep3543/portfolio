@@ -1,6 +1,6 @@
 # 👨‍💻 Portfolio Website | Deep Patel 👨‍💻
 
-> This is my portfolio website. It is a single page website with a minimalistic design. It is built using React and is fully responsive.
+> This is my portfolio website. It is a static webpage with a minimalistic design. It is built using React and pure CSS.
 
 ## 🔗 Website Link
 
